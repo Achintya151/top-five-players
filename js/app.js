@@ -1,3 +1,32 @@
+// selection part 
+const selectArray = [];
+
+function display(selectPlayer) {
+
+    const tableBody = document.getElementById('player-list');
+    tableBody.innerHTML = "";
+
+    for (let i = 0; i < selectPlayer.length; i++) {
+
+        const name = selectArray[i];
+
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<th>${i + 1}</th>
+        <td>${name}</td>`;
+        tableBody.appendChild(tr);
+    }
+
+};
+
+function addToSelected(element) {
+
+    const playerName = element.parentNode.children[0].innerText;
+
+    selectArray.push(playerName);
+    document.getElementById('total-selected').innerText = selectArray.length;
+    display(selectArray);
+};
+// budget part 
 function inputFieldValues(element) {
     const saleryField = document.getElementById(element);
     const newSaleryString = saleryField.value;
@@ -5,7 +34,8 @@ function inputFieldValues(element) {
     saleryField.value = '';
     return newSalery;
 
-}
+};
+
 document.getElementById('btn-calculate').addEventListener('click', function () {
 
     const newPerPlayerAmount = inputFieldValues('input-field-per-player');
@@ -29,4 +59,4 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
     const total = document.getElementById('total');
     const newTotal = newPlayerExpense + newManagerSalery + newCoachSalery;
     total.innerText = newTotal;
-})
+});

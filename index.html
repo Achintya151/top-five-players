@@ -25,14 +25,16 @@
                             <img src="images/lionel messi.png" alt="">
                             <div class="grid justify-items-center">
                                 <h1 class="text-2xl font-semibold m-2">Lionel Messi</h1>
-                                <button class="bg-blue-700 text-white px-12 m-6">Select</button>
+                                <button id="btn-select-messi" class="bg-blue-700 text-white px-12 m-6"
+                                    onclick="addToSelected(this)">Select</button>
                             </div>
                         </div>
                         <div class="border-1 bg-black">
                             <img src="images/neymer jr..png" alt="">
                             <div class="grid justify-items-center">
                                 <h1 class="text-2xl font-semibold m-2">Neymar Jr</h1>
-                                <button class="bg-blue-700 text-white px-12 m-6">Select</button>
+                                <button id="btn-select-neymer" class="bg-blue-700 text-white px-12 m-6"
+                                    onclick="addToSelected(this)">Select</button>
                             </div>
                         </div>
                         <div class="border-1 bg-black">
@@ -40,7 +42,8 @@
                             <div class="grid justify-items-center">
                                 <h1 class="text-2xl font-semibold m-2">Kylian Mbappé
                                 </h1>
-                                <button class="bg-blue-700 text-white px-12 m-6">Select</button>
+                                <button id="btn-select-mbappe" class="bg-blue-700 text-white px-12 m-6"
+                                    onclick="addToSelected(this)">Select</button>
                             </div>
                         </div>
                         <div class="border-1 bg-black">
@@ -48,7 +51,8 @@
                             <div class="grid justify-items-center">
                                 <h1 class="text-2xl font-semibold m-2">Vítor Machado
                                 </h1>
-                                <button class="bg-blue-700 text-white px-12 m-6">Select</button>
+                                <button id="btn-select-machado" class="bg-blue-700 text-white px-12 m-6"
+                                    onclick="addToSelected(this)">Select</button>
                             </div>
                         </div>
                         <div class="border-1 bg-black">
@@ -56,14 +60,16 @@
                             <div class="grid justify-items-center">
                                 <h1 class="text-2xl font-semibold m-2">Sergio Ramos
                                 </h1>
-                                <button class="bg-blue-700 text-white px-12 m-6">Select</button>
+                                <button id="btn-select-ramos" class="bg-blue-700 text-white px-12 m-6"
+                                    onclick="addToSelected(this)">Select</button>
                             </div>
                         </div>
                         <div class="border-1 bg-black">
                             <img src="images/Renato Sanches.png" alt="">
                             <div class="grid justify-items-center">
                                 <h1 class="text-2xl font-semibold m-2">Renato Sanches</h1>
-                                <button class="bg-blue-700 text-white px-12 m-6">Select</button>
+                                <button id="btn-select-sanches" class="bg-blue-700 text-white px-12 m-6"
+                                    onclick="addToSelected(this)">Select</button>
                             </div>
                         </div>
                     </div>
@@ -72,21 +78,20 @@
                     <div class="gap-4 border-1 mb-5 bg-neutral-900">
                         <!-- select five  -->
                         <div>
-                            <h1 class="text-5xl font-semibold text-center p-6">Select Five</h1>
+                            <h1 class="text-4xl font-semibold text-center p-6">Selected - <span
+                                    id="total-selected">0</span></h1>
                             <div class="mx-4">
-                                <ol class="list-decimal list-inside gap-4">
-                                    <li class="py-3">Player name</li>
-                                    <li class="py-3">Player name</li>
-                                    <li class="py-3">Player name</li>
-                                    <li class="py-3">Player name</li>
-                                    <li class="py-3 pb-8">Player name</li>
-                                </ol>
+                                <table>
+                                    <tbody id="player-list">
+
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                     <!-- budget  -->
                     <div class="gap-4 border-1 bg-neutral-900">
-                        <h1 class="text-5xl font-semibold text-center p-6">Budget</h1>
+                        <h1 class="text-4xl font-semibold text-center p-6">Budget</h1>
 
                         <div class="m-4">
                             <div class="grid grid-cols-2">
