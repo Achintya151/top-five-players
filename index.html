@@ -1,19 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Best Five Players</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
     <header>
-        <h1> Five Best Players</h1>
+        <div class="text-center mx-20 my-20">
+            <h1 class="text-6xl font-bold mb-5 text-orange-500">Five Best Players</h1>
+            <p>Select the top five best players from the list below.</p>
+        </div>
     </header>
     <main>
-        <section>
+        <section class="mx-20">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="grid grid-cols-3 justify-items-center gap-4">
+                    <div class="border-2">
+                        <img src="images/lionel messi.png" alt="">
+                        <div class="grid justify-items-center">
+                            <h1 class="text-2xl font-semibold m-2">Lionel Messi</h1>
+                            <button class="bg-blue-700 text-white px-12 m-4">Select</button>
+                        </div>
+                    </div>
+                    <div class="border-2">
+                        <img src="images/neymer jr..png" alt="">
+                        <div class="grid justify-items-center">
+                            <h1 class="text-2xl font-semibold m-2">Neymar Jr</h1>
+                            <button class="bg-blue-700 text-white px-12 m-4">Select</button>
+                        </div>
+                    </div>
+                    <div class="border-2">
+                        <img src="images/Kylian Mbappé.png" alt="">
+                        <div class="grid justify-items-center">
+                            <h1 class="text-2xl font-semibold m-2">Kylian Mbappé
+                            </h1>
+                            <button class="bg-blue-700 text-white px-12 m-4">Select</button>
+                        </div>
+                    </div>
+                    <div class="border-2">
+                        <img src="images/Vítor Machado.png" alt="">
+                        <div class="grid justify-items-center">
+                            <h1 class="text-2xl font-semibold m-2">Vítor Machado
+                            </h1>
+                            <button class="bg-blue-700 text-white px-12 m-4">Select</button>
+                        </div>
+                    </div>
+                    <div class="border-2">
+                        <img src="images/Sergio Ramos.png" alt="">
+                        <div class="grid justify-items-center">
+                            <h1 class="text-2xl font-semibold m-2">Sergio Ramos
+                            </h1>
+                            <button class="bg-blue-700 text-white px-12 m-4">Select</button>
+                        </div>
+                    </div>
+                    <div class="border-2">
+                        <img src="images/Renato Sanches.png" alt="">
+                        <div class="grid justify-items-center">
+                            <h1 class="text-2xl font-semibold m-2">Renato Sanches</h1>
+                            <button class="bg-blue-700 text-white px-12 m-4">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-6/12 gap-4 border-2 mb-5">
+                        <h1 class="text-5xl font-semibold text-center m-6">Select Five</h1>
+                    </div>
+                    <div class="w-6/12 gap-4 border-2">
+                        <h1 class="text-5xl font-semibold text-center m-6">Budget</h1>
+
+                        <div class="m-4">
+                            <div class="grid grid-cols-2">
+                                <h5>Per Player</h5>
+                                <input class="border-2" type="text">
+                            </div>
+                            <div class="flex justify-center">
+                                <button class="bg-blue-700 text-white px-12 my-4 ">Calculate</button>
+                            </div>
+
+                            <div class="grid grid-cols-2 my-2">
+                                <h5>Player Expenses</h5>
+                                <h5 class="text-right">$5000</h5>
+                            </div>
+
+                            <div class="grid grid-cols-2 my-2">
+                                <h5>Manager</h5>
+                                <input class=" border-2" type="text">
+                            </div>
+                            <div class="grid grid-cols-2 my-2">
+                                <h5>Coach</h5>
+                                <input class="border-2" type="text">
+                            </div>
+                            <div class="flex justify-center">
+                                <button class="bg-blue-700 text-white px-12 my-4 ">Calculate Total</button>
+                            </div>
+
+                            <div class="grid grid-cols-2">
+                                <h5>Total</h5>
+                                <h5 class="text-right">$11000</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
         </section>
     </main>
