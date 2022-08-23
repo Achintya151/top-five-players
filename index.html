@@ -9,14 +9,17 @@
 </head>
 
 <body class="bg-stone-800 text-white">
-    <header>
-        <div class="text-center mx-20 my-20">
+    <header class="bg-black flex space-x-48 pt-12">
+        <div>
+            <img src="images/mbappe cover.png" alt="">
+        </div>
+        <div class="text-center mx-20 my-20 pl-10">
             <h1 class="text-6xl font-bold mb-5 text-orange-500">Top Five Best Players</h1>
             <p>Select the top five best players from the list below.</p>
         </div>
     </header>
     <main>
-        <section class="mx-20">
+        <section class="mx-20 my-20">
             <div class="grid grid-cols-4 mx-20 gap-4">
                 <!-- player selection  -->
                 <div class="col-span-3">
@@ -25,7 +28,8 @@
                             <img src="images/lionel messi.png" alt="">
                             <div class="grid justify-items-center">
                                 <h1 class="text-2xl font-semibold m-2">Lionel Messi</h1>
-                                <button id="btn-select-messi" class="bg-blue-700 text-white px-12 m-6"
+                                <button id="btn-select-messi"
+                                    class="bg-blue-700 text-white px-12 m-6 disabled:bg-slate-50 disabled:text-black"
                                     onclick="addToSelected(this)">Select</button>
                             </div>
                         </div>
@@ -33,7 +37,8 @@
                             <img src="images/neymer jr..png" alt="">
                             <div class="grid justify-items-center">
                                 <h1 class="text-2xl font-semibold m-2">Neymar Jr</h1>
-                                <button id="btn-select-neymer" class="bg-blue-700 text-white px-12 m-6"
+                                <button id="btn-select-neymer"
+                                    class="bg-blue-700 text-white px-12 m-6 disabled:bg-slate-50 disabled:text-black"
                                     onclick="addToSelected(this)">Select</button>
                             </div>
                         </div>
@@ -42,7 +47,8 @@
                             <div class="grid justify-items-center">
                                 <h1 class="text-2xl font-semibold m-2">Kylian Mbappé
                                 </h1>
-                                <button id="btn-select-mbappe" class="bg-blue-700 text-white px-12 m-6"
+                                <button id="btn-select-mbappe"
+                                    class="bg-blue-700 text-white px-12 m-6 disabled:bg-slate-50 disabled:text-black"
                                     onclick="addToSelected(this)">Select</button>
                             </div>
                         </div>
@@ -51,7 +57,8 @@
                             <div class="grid justify-items-center">
                                 <h1 class="text-2xl font-semibold m-2">Vítor Machado
                                 </h1>
-                                <button id="btn-select-machado" class="bg-blue-700 text-white px-12 m-6"
+                                <button id="btn-select-machado"
+                                    class="bg-blue-700 text-white px-12 m-6 disabled:bg-slate-50 disabled:text-black"
                                     onclick="addToSelected(this)">Select</button>
                             </div>
                         </div>
@@ -60,7 +67,8 @@
                             <div class="grid justify-items-center">
                                 <h1 class="text-2xl font-semibold m-2">Sergio Ramos
                                 </h1>
-                                <button id="btn-select-ramos" class="bg-blue-700 text-white px-12 m-6"
+                                <button id="btn-select-ramos"
+                                    class="bg-blue-700 text-white px-12 m-6 disabled:bg-slate-50 disabled:text-black"
                                     onclick="addToSelected(this)">Select</button>
                             </div>
                         </div>
@@ -68,7 +76,8 @@
                             <img src="images/Renato Sanches.png" alt="">
                             <div class="grid justify-items-center">
                                 <h1 class="text-2xl font-semibold m-2">Renato Sanches</h1>
-                                <button id="btn-select-sanches" class="bg-blue-700 text-white px-12 m-6"
+                                <button id="btn-select-sanches"
+                                    class="bg-blue-700 text-white px-12 m-6 disabled:bg-slate-50 disabled:text-black"
                                     onclick="addToSelected(this)">Select</button>
                             </div>
                         </div>
@@ -132,6 +141,11 @@
 
         </section>
     </main>
+    <footer>
+        <div class="bg-black p-8 border-t-2">
+            <h5 class="text-center">Copyright @ 2022 All Rights Reserved.</h5>
+        </div>
+    </footer>
     <script src="js/app.js"></script>
 </body>
 

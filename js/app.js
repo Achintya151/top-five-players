@@ -2,23 +2,31 @@
 const selectArray = [];
 
 function display(selectPlayer) {
+    if (selectArray.length < 6) {
+        const tableBody = document.getElementById('player-list');
+        tableBody.innerHTML = "";
 
-    const tableBody = document.getElementById('player-list');
-    tableBody.innerHTML = "";
+        for (let i = 0; i < selectPlayer.length; i++) {
 
-    for (let i = 0; i < selectPlayer.length; i++) {
+            const name = selectArray[i];
 
-        const name = selectArray[i];
-
-        const tr = document.createElement('tr');
-        tr.innerHTML = `<th>${i + 1}</th>
+            const tr = document.createElement('tr');
+            tr.innerHTML = `<th>${i + 1}</th>
         <td>${name}</td>`;
-        tableBody.appendChild(tr);
+            tableBody.appendChild(tr);
+        }
     }
+    else {
+        alert("You can select only 5 players");
+        return alert;
+    }
+
 
 };
 
 function addToSelected(element) {
+
+    element.disabled = true;
 
     const playerName = element.parentNode.children[0].innerText;
 
